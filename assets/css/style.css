@@ -1,0 +1,91 @@
+:root {
+    --font1: rgb(221, 97, 97);
+    --font2: rgb(253, 233, 252);
+    --box-background: rgb(240, 212, 212);
+    --background1: rgb(10, 14, 11);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+    background-color: var(--background1);
+}
+
+/* -------------------------NAV------------------------- */
+
+.nav {
+    width: 100vw;
+    height: 80px;
+    padding: 10px 10px 10px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px var(--font1);
+}
+
+.nav h1 {
+    margin-left: 40px;
+    color: var(--font1);
+    font-size: 2rem;
+}
+
+.nav h2 {
+    margin-right: 40px;
+    margin-left: auto;
+}
+
+.nav h2 a {
+    text-decoration: none;
+    color: var(--font1);
+}
+
+.nav h2 a:hover {
+    text-shadow: 2px 2px 20px var(--box-background);
+}
+
+/* -------------------------FOOTER------------------------- */
+
+footer {
+    border-top: solid var(--font1) 2px;
+    display: flex;
+    line-height: 1.5rem;
+    min-height: 20vh;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin-top: px;
+    margin-bottom: 20px;
+    color: var(--font1);
+}
+
+.contact {
+    color: var(--font1);
+    margin-top: 20px;
+    text-align: center;
+    height: 100px;
+ 
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: var(--font1);
+    padding: 10px 0px 10px ;
+    margin: 10px 0px 10px;
+}
+
+.contact a:hover {
+    text-shadow: 2px 2px 20px var(--box-background);
+}
+
+/* -------------------------MEDIA SCREEN------------------------- */
+
+/* @media screen and (max-width: 800px) {} */
