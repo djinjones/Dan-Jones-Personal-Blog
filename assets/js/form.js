@@ -1,22 +1,32 @@
 
-
-const submitButton = document.querySelector('#submitButton');
+const form = document.querySelector('#blogForm');
 const usernameInput = document.querySelector('#usernameInput');
 const titleInput = document.querySelector('#titleInput')
 const contentInput = document.querySelector('#contentInput')
 
-const tempUserInput = [usernameInput, titleInput, contentInput];
+blogs = JSON.parse(localStorage.getItem('blogs'))
+const importSavedBlogs = function() {
+    if (blogs == null){
+        blogs = []
+    }}
 
-document.body.addEventListener('click', function(event) {
-    const element = event.target
-    if (element.matches('#submitButton')) {
-        submitForm();
-    }
+importSavedBlogs();
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    if (usernameInput.value == '' || titleInput.value == '' || contentInput.value == ''){
+        alert('All fields must be filled out. Please try again.') 
+        return;
+    } else {
+      const tempUserInput = {
+        username: usernameInput.value, 
+        title: titleInput.value, 
+        content: contentInput.value
+        };
+        blogs.push(tempUserInput);
+        localStorage.setItem('blogs', JSON.stringify(blogs));
+        window.location.href = "./blog.html"
+        return;
+     }
 })
 
-const submitForm = function() {
-    console.log('woah, nice click')
-    if (contentInput.includes(null)) {
-        alert("All fields must be filled out before proceeding")
-    }
-}

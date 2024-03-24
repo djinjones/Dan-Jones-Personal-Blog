@@ -1,25 +1,25 @@
 // First thing to do is to set constant variables for the html and css documents
 const navButton = document.querySelector('#navButton')
 const colorModeButton = document.querySelector('.colorModeButton');
+let bigButton = document.querySelector('#bigButton')
 const root = document.querySelector(":root");
 
-
-
+//------------------------DARK MODE---------------------------
+//------------------------DARK MODE---------------------------
+//------------------------DARK MODE---------------------------
 // We need to add a click funtion that switches the page's color mode✅
 // We need to make a few functions to change the css styling from light to dark✅
 // we also need to make sure we are checking to see what mode it is currently in✅
 // It would also be a good idea to store the currently saved color mode so that when relaoding the page it will change it to whatever the user last had✅
 
-
 //------------------------CLICK FUNCTION---------------------------
 
-document.body.addEventListener('click', function(event){
-    const element = event.target
-    if (element.matches('.colorModeButton')) {
-        
-        changeColorMode();
-    } 
-}) 
+colorModeButton.addEventListener('click', function(){
+    changeColorMode();
+})
+bigButton.addEventListener('click',function(){
+changeColorMode();
+})
 
 //------------------------COLOR CHANGE FUNCTION---------------------------
 
@@ -43,6 +43,8 @@ const toDarkMode = function() {
         root.style.setProperty('--background1', 'rgb(10, 14 11)');
         root.style.setProperty('--gradient','linear-gradient(rgb(240, 212, 212), white)');
         colorModeButton.textContent = 'Light mode on 😒 EWW!';
+        bigButton.textContent = 'Light mode on 😒 EWW!';
+        bigButton.style.setProperty('color', 'black')
         navButton.style.setProperty('color', 'black')
         console.log('dark mode is now off');
 }
@@ -54,6 +56,8 @@ const toLightMode = function() {
         root.style.setProperty('--gradient','linear-gradient( rgb(221, 97, 97), black)');
         navButton.style.setProperty('color', 'white')
         colorModeButton.textContent = 'Change it to Light mode 😒 EWW!';
+        bigButton.textContent = 'Change it to Light mode 😒 EWW!';
+        bigButton.style.setProperty('color', 'white')
         console.log('dark mode is now on');
 }
 
@@ -83,3 +87,8 @@ function init() {
 }
 
 init();
+
+//------------------------FORM---------------------------
+//------------------------FORM---------------------------
+//------------------------FORM---------------------------
+

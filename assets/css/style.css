@@ -129,6 +129,10 @@ main {
     text-shadow: 2px 2px 20px var(--box-background);
 }
 
+.card input {
+    color: var(--font1);
+}
+
 #usernameInput {
     height: 35px;
 }
