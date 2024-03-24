@@ -1,5 +1,5 @@
 // First thing to do is to set constant variables for the html and css documents
-
+const navButton = document.querySelector('#navButton')
 const colorModeButton = document.querySelector('.colorModeButton');
 const root = document.querySelector(":root");
 
@@ -43,6 +43,7 @@ const toDarkMode = function() {
         root.style.setProperty('--background1', 'rgb(10, 14 11)');
         root.style.setProperty('--gradient','linear-gradient(rgb(240, 212, 212), white)');
         colorModeButton.textContent = 'Light mode on 😒 EWW!';
+        navButton.style.setProperty('color', 'black')
         console.log('dark mode is now off');
 }
 
@@ -51,6 +52,7 @@ const toLightMode = function() {
         root.style.setProperty('--font1', 'rgb(221, 97, 97)');
         root.style.setProperty('--background1', 'black');
         root.style.setProperty('--gradient','linear-gradient( rgb(221, 97, 97), black)');
+        navButton.style.setProperty('color', 'white')
         colorModeButton.textContent = 'Change it to Light mode 😒 EWW!';
         console.log('dark mode is now on');
 }

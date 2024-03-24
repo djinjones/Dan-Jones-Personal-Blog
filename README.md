@@ -1,6 +1,6 @@
-# Dan Jones Employee Payroll Tracker
+# Dan Jones Employee Personal Blog
 
-![banner](./assets/github-header-image.png)
+![banner](./assets/images/github-header-image.png)
 
 [![license](https://img.shields.io/github/license/:user/:djinjones.svg)](LICENSE)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
@@ -12,10 +12,13 @@
 
 ## Descrption
 
-This is a simple website for creating and storing blog posts. 
+This is a simple website for creating and storing blog posts. There is also a funciton for changing the theme of the webpage from dark to light. 
+
+This applicaiton uses local storage to store a users blog posts as well as their dark mode setting.
 
 ## Table of Contents
 
+- [ScreenShots](#screenshots)
 - [Links](#links)
 - [API](#api)
 - [References](#references)
@@ -23,9 +26,17 @@ This is a simple website for creating and storing blog posts.
 - [Contributing](#contributing)
 - [License](#license)
 
+
+## Screenshots
+Dark Mode:
+![DarkMode](./assets/images/darkmodeblog.png)
+
+Light Mode:
+![LightMode](./assets/images/lightmodeblog.png)
+
 ## Links
 
-[Dan Jones Personal Blog](https://djinjones.github.io/week-4-challenge/)
+[Dan Jones Personal Blog](https://djinjones.github.io/Dan-Jones-Personal-Blog/)
 
 ## API
 

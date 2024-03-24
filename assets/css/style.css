@@ -18,7 +18,7 @@
 
 .nav {
     width: 100vw;
-    height: 80px;
+    height: 13vh;
     padding: 10px 10px 10px;
     margin: auto;
     justify-content: center;
@@ -36,6 +36,18 @@
 .nav h2 {
     margin-right: 40px;
     margin-left: auto;
+}
+
+nav button {
+    margin: auto;
+    align-items: center;
+    width: fit-content;
+    padding: 5px;
+    background-image: var(--gradient);
+    display: flex;
+    color: var(--box-background);
+    height: 50px;
+    border-radius: 5px;
 }
 
 .nav h2 a {
@@ -184,4 +196,35 @@ footer p {
 
 /* -------------------------MEDIA SCREEN------------------------- */
 
-/* @media screen and (max-width: 800px) {} */
+@media(max-width: 1250px) {
+    .card {
+        width: 35vw;
+    }
+}
+
+ @media (max-width: 830px) {
+    .nav {
+        height: 30vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav h2 {
+        margin: auto;
+    }
+    .nav h1 {
+        margin: auto;
+    }
+    .nav button {
+        margin: auto;
+    }
+    .card {
+        width: 90vw;
+    }
+    #blogForm {
+        width: 80vw;
+    }
+    .buttons button {
+        width: 60vw;
+        height: 60vw;
+    }
+ } 
