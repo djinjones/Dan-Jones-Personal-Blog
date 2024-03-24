@@ -1,8 +1,9 @@
 :root {
     --font1: rgb(221, 97, 97);
-    --font2: rgb(253, 233, 252);
+    --font2: rgb(243, 208, 241);
     --box-background: rgb(240, 212, 212);
     --background1: rgb(10, 14, 11);
+    --gradient: linear-gradient( rgb(221, 97, 97), black)
 }
 
 * {
@@ -44,6 +45,101 @@
 
 .nav h2 a:hover {
     text-shadow: 2px 2px 20px var(--box-background);
+}
+
+/* -------------------------SETTINGS------------------------- */
+
+#settingsCard {
+    color: var(--font1);
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 35vw;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.buttons button {
+    margin-top: 20px auto 20px;
+    background-image: var(--gradient); 
+    color: var(--background1);
+    font-weight: bolder;
+    border-radius: 50%;
+    height: 25vw;
+    width: 25vw;
+    font-size: 150%;
+}
+
+/* -------------------------BLOGFORM------------------------- */
+
+main {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border: solid 2px var(--font1);
+    margin: 10px 30px 10px;
+    height: 80vh;
+    padding: 20px 20px 20px;
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+#blogForm {
+    color: var(--font1);
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 35vw;
+}
+
+#formTitle {
+    font-size: 2rem;
+    margin: 5px auto 5px;
+}
+
+.formH3 {
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 10px 10px 10px;
+}
+
+.inputSection::selection {
+    text-shadow: 2px 2px 20px var(--box-background);
+}
+
+#usernameInput {
+    height: 35px;
+}
+
+#titleInput {
+    height: 35px;
+}
+
+#contentInput {
+    height: 100px;
+}
+
+form button {
+    margin-top: 20px;
+    background-color: var(--font1);
+    color: var(--box-background);
+    font-weight: bolder;
+    height: 40px;
+}
+
+form button:hover {
+    text-shadow: 5px 5px 20px var(--box-background);
+    cursor: pointer;
 }
 
 /* -------------------------FOOTER------------------------- */

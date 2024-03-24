@@ -6,13 +6,31 @@
     <link href="./assets/css/style.css" rel="stylesheet">
     <title>Dan Jones || Personal Blog</title>
 </head>
-<body>
+<body >
     <nav class="nav">
-        <h1>Dan Jones | Personal Blog</h1>
+        <h1 class="webageTitle">Dan Jones | Personal Blog</h1>
         <h2><a href="https://djinjones.github.io/week-2/challenge">🔙Portfolio🔙</a></h2>
     </nav>
     <main>
-
+        <aside class="card">
+            <div id="settingsCard">
+                <section class="buttons">
+                    <button class="colorModeButton" data-type="true">Change dark/light mode</button>
+                </section>
+            </div>
+        </aside>
+        <section class="card">
+                <form id="blogForm">
+                    <h2 id="formTitle">What's on your mind?</h2>
+                    <h3 class="formH3">Username</h3>
+                    <input class="inputSection" id="usernameInput" placeholder="What's your name?">
+                    <h3 class="formH3">Title</h3>
+                    <input class="inputSection" id="titleInput" placeholder="Name it something catchy">
+                    <h3 class="formH3">Content</h3>
+                    <input class="inputSection" id="contentInput" placeholder="What's on your mind?">
+                    <button #id="submitButton">Submit</button>
+                </form>
+        </section>
     </main>
     <footer>
         <section id="con" class="contact">
@@ -22,5 +40,6 @@
         </section>
         <p>Designed with ❤️ from Dan Jones</p>
     </footer>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
