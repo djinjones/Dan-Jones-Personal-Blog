@@ -49,7 +49,7 @@ nav div {
     margin: auto 10px auto;
     background-image: var(--gradient);
     display: flex;
-    color: var(--box-background);
+    color: var(grey);
     height: 50px;
     border-radius: 5px;
 }

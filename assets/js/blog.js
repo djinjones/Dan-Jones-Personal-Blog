@@ -25,9 +25,9 @@ const appendBlogPosts = function() {
         const newUser = document.createElement('h4')
         const newTitle = document.createElement('h2');
         const newContent = document.createElement('p');
-        newTitle.textContent = element.title;
+        newTitle.textContent = `Title: ${element.title}`;
         newTitle.classList.add('blogh2')
-        newUser.textContent = element.username;
+        newUser.textContent = `User: ${element.username}`;
         newUser.classList.add('blogh4')
         newContent.textContent = element.content;
         newContent.classList.add('blogp')

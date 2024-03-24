@@ -34,6 +34,12 @@ Dark Mode:
 Light Mode:
 ![LightMode](./assets/images/lightmodeblog.png)
 
+Blog Post Dark Mode:
+![bpDark](./assets/images/blogpostdark.png)
+
+Blog Post Light Mode:
+![bpLight](./assets/images/blogpostlight.png)
+
 ## Links
 
 [Dan Jones Personal Blog](https://djinjones.github.io/Dan-Jones-Personal-Blog/)
