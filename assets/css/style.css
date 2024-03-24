@@ -131,6 +131,7 @@ main {
 
 .card input {
     color: var(--font1);
+    font-size: 1.3rem;
 }
 
 #usernameInput {
